@@ -130,3 +130,13 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_ROOT = 'media'
 MEDIA_URL = '/media/'
+
+SWAGGER_SETTINGS = {
+    'USE_SESSION_AUTH': False,
+
+    'SECURITY_DEFINITIONS': {
+        'Basic': {
+            'type': 'basic'
+        },
+    },
+}
