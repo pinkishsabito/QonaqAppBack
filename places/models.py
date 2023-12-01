@@ -2,7 +2,8 @@ import uuid
 
 from django.db import models
 
-from core.models import Category
+from events.models import Category
+from tours.models import Tour
 
 
 class Place(models.Model):
@@ -13,7 +14,7 @@ class Place(models.Model):
     location_coordinate = models.CharField(max_length=255)
     rating = models.FloatField()
     description = models.TextField()
-    tour_list = models.ManyToManyField('Tour')
+    tour_list = models.ManyToManyField(Tour, related_name='places')
 
     def __str__(self):
         return self.name
