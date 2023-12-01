@@ -16,7 +16,7 @@ Make sure you have the following installed:
 1. Clone the repository:
     ```bash
     git clone https://github.com/pinkishsabito/qonaq_back.git
-    cd QonaqAppBack
+    cd qonaq_back
     ```
     
 2. Create a virtual environment:
