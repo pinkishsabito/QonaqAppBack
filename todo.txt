@@ -1,0 +1,60 @@
+1) Home
+ 	Api calls
+		1) Image, Title, Location, Rating(out of 5)
+		3 endpoint
+		Sorted in decreasing order by rating
+
+2) Events
+ 	Api calls
+		1) Image, Title, Location, Price, Date
+		3 endpoint
+		Sorted in decreasing order by Date
+
+3) SOS(Static)
+
+
+4) Map
+
+ 	Api calls
+		0) Category List( Name, Id)
+		1) places list (Id, Name, Image, LocationCoordinate[Lat, Long], Rating, categoryId, )
+		3 endpoint
+		Sorted in decreasing order by rating
+
+5) Info(static)
+
+
+Entities:
+
+Place
+	ID
+	Name
+	Categoryid
+	Image
+	LocationCoordinate
+	rating(out of 5)
+	description
+	TourList
+
+Event
+	ID
+	Name
+	Categoryid
+	Image
+	LocationCoordinate
+	rating
+	description
+	Price
+
+TourAgent
+	Id
+	Name
+	rating
+	isVerified
+
+Tour
+	Id
+	Name
+	rating
+	price
+	tourAgent
