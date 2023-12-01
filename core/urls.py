@@ -22,7 +22,7 @@ from core import settings
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', include('qonaq.urls')),
+    path('/', include('qonaq.urls')),
 ]
 
 if settings.DEBUG:
