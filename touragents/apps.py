@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class QonaqConfig(AppConfig):
+class TouragentsConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "qonaq"
+    name = "touragents"
