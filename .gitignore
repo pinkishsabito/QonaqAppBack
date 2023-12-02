@@ -59,6 +59,7 @@ cover/
 *.log
 local_settings.py
 testdb.sqlite
+temporary_db.sql
 db.sqlite3
 db.sqlite3-journal
 

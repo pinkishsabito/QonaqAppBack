@@ -10,6 +10,9 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        db_table = 'category'
+
 
 class Event(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -23,3 +26,6 @@ class Event(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        db_table = 'events'
